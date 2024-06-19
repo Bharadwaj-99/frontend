@@ -11,7 +11,7 @@ const Statistics = ({ selectedMonth }) => {
   useEffect(() => {
     const getStatistics = async () => {
       try {
-        const response = await axios.get(`http://localhost:5000/api/statistics?month=${selectedMonth}`);
+        const response = await axios.get(`https://backend-rox-1.onrender.com/api/statistics?month=${selectedMonth}`);
         
         setStatistics(response.data);
       } catch (error) {
